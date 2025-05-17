@@ -154,35 +154,18 @@ float adcInMillivolts(int analogPin) {
 }
 
 int convertVoltageToUVIndex(float mvVoltage) {
-  int uvIndex = 0;
-
-  if (mvVoltage < 50) {
-    uvIndex = 0;
-  } else if (mvVoltage < 227) {
-    uvIndex = 1;
-  } else if (mvVoltage < 318) {
-    uvIndex = 2;
-  } else if (mvVoltage < 408) {
-    uvIndex = 3;
-  } else if (mvVoltage < 503) {
-    uvIndex = 4;
-  } else if (mvVoltage < 606) {
-    uvIndex = 5;
-  } else if (mvVoltage < 696) {
-    uvIndex = 6;
-  } else if (mvVoltage < 795) {
-    uvIndex = 7;
-  } else if (mvVoltage < 881) {
-    uvIndex = 8;
-  } else if (mvVoltage < 976) {
-    uvIndex = 9;
-  } else if (mvVoltage < 1079) {
-    uvIndex = 10;
-  } else {
-    uvIndex = 11;
-  }
-
-  return uvIndex;
+  if (mvVoltage < 50) return 0;
+  if (mvVoltage < 227) return 1;
+  if (mvVoltage < 318) return 2;
+  if (mvVoltage < 408) return 3;
+  if (mvVoltage < 503) return 4;
+  if (mvVoltage < 606) return 5;
+  if (mvVoltage < 696) return 6;
+  if (mvVoltage < 795) return 7;
+  if (mvVoltage < 881) return 8;
+  if (mvVoltage < 976) return 9;
+  if (mvVoltage < 1079) return 10;
+  return 11;
 }
 
 int readUVIndex() {
