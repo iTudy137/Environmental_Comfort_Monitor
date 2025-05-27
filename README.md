@@ -1,1 +1,3 @@
 # Environmental_Comfort_Monitor
+
+Environmental Comfort Monitor is a portable, Wi-Fi-enabled device built on the ESP32 platform, designed to monitor key environmental parameters such as temperature, humidity, air quality, light, UV index, and atmospheric pressure. Featuring both an intuitive web interface and an LCD display, it provides real-time feedback and an aggregated comfort score based on customizable thresholds. Whether you're tracking indoor conditions, monitoring a greenhouse, or studying urban microclimates, this project offers a flexible and scalable solution. Easily extensible and open-source, it's ideal for hobbyists, researchers, and smart home enthusiasts alike.
